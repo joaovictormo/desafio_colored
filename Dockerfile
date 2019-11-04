@@ -5,6 +5,6 @@ RUN apt-get -y install python-dev
 RUN apt-get -y install build-essential
 COPY requirements.txt /
 COPY color.py /
-COPY /templates /
+COPY /templates/hello.html /templates/
 RUN pip install -r requirements.txt
 CMD python color.py
